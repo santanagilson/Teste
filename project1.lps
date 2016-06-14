@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="7">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="94"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="principal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Principal"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="27"/>
+        <CursorPos X="8" Y="55"/>
+        <UsageCount Value="94"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="udiagnostico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormDiagnostico"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="405"/>
+        <CursorPos X="11" Y="406"/>
+        <UsageCount Value="94"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="/var/tmp/kdecache-gilson/krun/18465_0_uquestionario.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="/usr/lib64/lazarus/lcl/include/wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5610"/>
+        <CursorPos Y="5626"/>
+        <UsageCount Value="3"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="/usr/lib64/lazarus/lcl/grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9729"/>
+        <CursorPos Y="9743"/>
+        <UsageCount Value="36"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="/usr/lib64/lazarus/lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1815"/>
+        <CursorPos X="15" Y="1815"/>
+        <UsageCount Value="8"/>
+      </Unit6>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
+  </ProjectSession>
+</CONFIG>

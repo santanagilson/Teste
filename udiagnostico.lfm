@@ -1,0 +1,474 @@
+object FormDiagnostico: TFormDiagnostico
+  Left = 465
+  Height = 722
+  Top = 150
+  Width = 1163
+  Caption = 'FormDiagnostico'
+  ClientHeight = 722
+  ClientWidth = 1163
+  Color = clSkyBlue
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  LCLVersion = '1.4.2.0'
+  object BitBtn1: TBitBtn
+    Left = 336
+    Height = 30
+    Top = 520
+    Width = 75
+    Caption = 'Sair'
+    OnClick = BitBtn1Click
+    TabOrder = 0
+  end
+  object PanelGrau: TPanel
+    Left = 748
+    Height = 162
+    Top = 72
+    Width = 188
+    ClientHeight = 162
+    ClientWidth = 188
+    TabOrder = 1
+    Visible = False
+    object PanelInterno: TPanel
+      Left = 3
+      Height = 156
+      Top = 3
+      Width = 182
+      BevelInner = bvLowered
+      ClientHeight = 156
+      ClientWidth = 182
+      TabOrder = 0
+      object STGrau1: TStaticText
+        Left = 8
+        Height = 20
+        Top = 32
+        Width = 167
+        Alignment = taCenter
+        BorderStyle = sbsSunken
+        Caption = 'Discordo Totalmente'
+        Color = 7632106
+        Font.Color = clBlack
+        OnClick = STGrau1Click
+        ParentFont = False
+        ParentColor = False
+        TabOrder = 0
+      end
+      object STGrau2: TStaticText
+        Left = 8
+        Height = 20
+        Top = 56
+        Width = 167
+        Alignment = taCenter
+        BorderStyle = sbsSunken
+        Caption = 'Discordo Parcialmente'
+        Color = 9098220
+        Font.Color = clBlack
+        OnClick = STGrau2Click
+        ParentFont = False
+        ParentColor = False
+        TabOrder = 1
+      end
+      object STGrau3: TStaticText
+        Left = 8
+        Height = 20
+        Top = 80
+        Width = 167
+        Alignment = taCenter
+        BorderStyle = sbsSunken
+        Caption = 'Não Concordo nem Discordo'
+        Color = clYellow
+        Font.Color = clBlack
+        OnClick = STGrau3Click
+        ParentFont = False
+        ParentColor = False
+        TabOrder = 2
+      end
+      object STGrau4: TStaticText
+        Left = 8
+        Height = 20
+        Top = 104
+        Width = 168
+        Alignment = taCenter
+        BorderStyle = sbsSunken
+        Caption = 'Concordo Parcialmente'
+        Color = 5041561
+        Font.Color = clBlack
+        OnClick = STGrau4Click
+        ParentFont = False
+        ParentColor = False
+        TabOrder = 3
+      end
+      object STGrau5: TStaticText
+        Left = 8
+        Height = 20
+        Top = 128
+        Width = 167
+        Alignment = taCenter
+        BorderStyle = sbsSunken
+        Caption = 'Concordo Totalmente'
+        Color = 6212190
+        Font.Color = clBlack
+        OnClick = STGrau5Click
+        ParentFont = False
+        ParentColor = False
+        TabOrder = 4
+      end
+      object Label2: TLabel
+        Left = 40
+        Height = 15
+        Top = 8
+        Width = 100
+        Caption = 'Concordância'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+  end
+  object PanelImportancia: TPanel
+    Left = 748
+    Height = 123
+    Top = 216
+    Width = 176
+    ClientHeight = 123
+    ClientWidth = 176
+    TabOrder = 2
+    Visible = False
+    object PanelInterno1: TPanel
+      Left = 3
+      Height = 117
+      Top = 3
+      Width = 169
+      BevelInner = bvLowered
+      ClientHeight = 117
+      ClientWidth = 169
+      TabOrder = 0
+      object STImportancia1: TStaticText
+        Left = 20
+        Height = 20
+        Top = 40
+        Width = 125
+        Alignment = taCenter
+        BorderStyle = sbsSunken
+        Caption = 'Sem importância'
+        Color = 7632106
+        Font.Color = clBlack
+        OnClick = STImportancia1Click
+        ParentFont = False
+        ParentColor = False
+        TabOrder = 0
+      end
+      object STImportancia2: TStaticText
+        Left = 20
+        Height = 20
+        Top = 62
+        Width = 125
+        Alignment = taCenter
+        BorderStyle = sbsSunken
+        Caption = 'Importante'
+        Color = 9098220
+        Font.Color = clBlack
+        OnClick = STImportancia2Click
+        ParentFont = False
+        ParentColor = False
+        TabOrder = 1
+      end
+      object STImportancia3: TStaticText
+        Left = 20
+        Height = 20
+        Top = 85
+        Width = 125
+        BorderStyle = sbsSunken
+        Caption = 'Muito importante'
+        Color = 6212190
+        Font.Color = clBlack
+        OnClick = STImportancia3Click
+        ParentFont = False
+        ParentColor = False
+        TabOrder = 2
+      end
+      object Label3: TLabel
+        Left = 8
+        Height = 15
+        Top = 16
+        Width = 152
+        Caption = 'Grau de Importância'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+  end
+  object PageControl2: TPageControl
+    Left = 8
+    Height = 720
+    Top = 8
+    Width = 1160
+    ActivePage = TabSheet3
+    TabIndex = 0
+    TabOrder = 3
+    object TabSheet3: TTabSheet
+      Caption = '          Internos          '
+      ClientHeight = 681
+      ClientWidth = 1156
+      Font.Color = clTeal
+      Font.Height = -21
+      Font.Style = [fsBold]
+      ParentFont = False
+      object PanelDiagnostico: TPanel
+        Left = 72
+        Height = 509
+        Top = 24
+        Width = 939
+        ClientHeight = 509
+        ClientWidth = 939
+        Font.Color = clBlack
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 0
+        object PageControl1: TPageControl
+          Left = 3
+          Height = 462
+          Top = 3
+          Width = 932
+          ActivePage = TabSheet1
+          Font.Color = clGreen
+          Font.Height = -16
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabIndex = 0
+          TabOrder = 0
+          object TabSheet1: TTabSheet
+            Caption = '  Forças    '
+            ClientHeight = 433
+            ClientWidth = 928
+            Font.Color = clGreen
+            Font.Style = [fsBold]
+            ParentFont = False
+            object StaticText3: TStaticText
+              Left = 320
+              Height = 36
+              Top = 336
+              Width = 190
+              Alignment = taCenter
+              Caption = 'Forças'
+              Font.Color = clNavy
+              Font.Height = -27
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 1
+            end
+            object SGForcas: TStringGrid
+              Left = 8
+              Height = 291
+              Top = 8
+              Width = 723
+              Columns = <              
+                item
+                  Title.Alignment = taCenter
+                  Title.Caption = 'Forças'
+                  Title.Font.Style = [fsBold]
+                  Width = 350
+                end              
+                item
+                  Alignment = taCenter
+                  Color = clWhite
+                  Font.Height = -11
+                  ReadOnly = True
+                  Title.Alignment = taCenter
+                  Title.Caption = 'Grau'
+                  Title.Font.Style = [fsBold]
+                  Width = 171
+                end              
+                item
+                  Font.Height = -11
+                  ReadOnly = True
+                  Title.Alignment = taCenter
+                  Title.Caption = 'Peso'
+                  Title.Font.Style = [fsBold]
+                  Width = 109
+                end              
+                item
+                  Alignment = taRightJustify
+                  Font.Height = -12
+                  Title.Alignment = taCenter
+                  Title.Caption = 'Nota'
+                  Width = 45
+                end>
+              DefaultColWidth = 25
+              Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+              RowCount = 16
+              TabOrder = 0
+              TitleFont.Style = [fsBold]
+              OnClick = SGForcasClick
+              OnDrawCell = SGForcasDrawCell
+              OnKeyPress = SGForcasKeyPress
+              OnSelectCell = SGForcasSelectCell
+              OnUTF8KeyPress = SGForcasUTF8KeyPress
+              Cells = (
+                1
+                1
+                0
+                'fgfgf'
+              )
+            end
+          end
+          object TabSheet2: TTabSheet
+            Caption = 'Fraquezas'
+            ClientHeight = 433
+            ClientWidth = 928
+            Font.Color = clRed
+            Font.Style = [fsBold]
+            ParentFont = False
+            object SGFraquezas: TStringGrid
+              Left = 8
+              Height = 291
+              Top = 8
+              Width = 723
+              Columns = <              
+                item
+                  Title.Alignment = taCenter
+                  Title.Caption = 'Fraquezas'
+                  Title.Font.Style = [fsBold]
+                  Width = 350
+                end              
+                item
+                  Alignment = taCenter
+                  Color = clWhite
+                  Font.Height = -11
+                  ReadOnly = True
+                  Title.Alignment = taCenter
+                  Title.Caption = 'Grau'
+                  Title.Font.Style = [fsBold]
+                  Width = 171
+                end              
+                item
+                  Font.Height = -11
+                  ReadOnly = True
+                  Title.Alignment = taCenter
+                  Title.Caption = 'Peso'
+                  Title.Font.Style = [fsBold]
+                  Width = 109
+                end              
+                item
+                  Alignment = taRightJustify
+                  Font.Height = -12
+                  Title.Alignment = taCenter
+                  Title.Caption = 'Nota'
+                  Width = 45
+                end>
+              DefaultColWidth = 25
+              Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+              RowCount = 16
+              TabOrder = 0
+              TitleFont.Style = [fsBold]
+              OnClick = SGFraquezasClick
+              OnDrawCell = SGFraquezasDrawCell
+              OnKeyPress = SGForcasKeyPress
+              OnSelectCell = SGForcasSelectCell
+              OnUTF8KeyPress = SGForcasUTF8KeyPress
+              Cells = (
+                1
+                1
+                0
+                'fgfgf'
+              )
+            end
+            object StaticText4: TStaticText
+              Left = 320
+              Height = 36
+              Top = 336
+              Width = 190
+              Alignment = taCenter
+              Caption = 'Fraquezas'
+              Font.Color = clNavy
+              Font.Height = -27
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 1
+            end
+          end
+        end
+        object Panel1: TPanel
+          Left = 5
+          Height = 40
+          Top = 466
+          Width = 931
+          ClientHeight = 40
+          ClientWidth = 931
+          TabOrder = 1
+          object Label1: TLabel
+            Left = 26
+            Height = 15
+            Top = 11
+            Width = 53
+            Caption = 'Forças:'
+            Font.Style = [fsBold]
+            ParentColor = False
+            ParentFont = False
+          end
+          object STTotalForacas: TStaticText
+            Left = 86
+            Height = 20
+            Top = 8
+            Width = 65
+            Alignment = taCenter
+            BorderStyle = sbsSunken
+            Caption = '0,0'
+            Color = clWhite
+            ParentColor = False
+            TabOrder = 0
+          end
+          object Label4: TLabel
+            Left = 184
+            Height = 15
+            Top = 11
+            Width = 81
+            Caption = 'Fraquezas:'
+            Font.Style = [fsBold]
+            ParentColor = False
+            ParentFont = False
+          end
+          object STTotalFraquezas: TStaticText
+            Left = 272
+            Height = 20
+            Top = 8
+            Width = 65
+            Alignment = taCenter
+            BorderStyle = sbsSunken
+            Caption = '0,0'
+            Color = clWhite
+            ParentColor = False
+            TabOrder = 1
+          end
+          object LBLDiagnostico: TLabel
+            Left = 360
+            Height = 15
+            Top = 12
+            Width = 554
+            AutoSize = False
+            Font.Color = clRed
+            Font.Style = [fsBold]
+            ParentColor = False
+            ParentFont = False
+          end
+        end
+      end
+      object Label5: TLabel
+        Left = 16
+        Height = 25
+        Top = -32
+        Width = 78
+        Caption = 'Label5'
+        Layout = tlCenter
+        ParentColor = False
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = '          Externos          '
+      Font.Color = clTeal
+      Font.Height = -21
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+end
